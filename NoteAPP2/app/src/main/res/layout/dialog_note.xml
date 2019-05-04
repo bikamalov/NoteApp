@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7da07"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/dialog_img"
+            android:paddingTop="10dp"
+            android:layout_width="92dp"
+            android:layout_height="78dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/clip" />
+        <EditText
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Edit Title"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <EditText
+            android:id="@+id/dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:hint="Edit text"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"/>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Cancel"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                ></View>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Save"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
